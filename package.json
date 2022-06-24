@@ -15,10 +15,6 @@
   "module": "dist/lightweight-charts.esm.production.js",
   "main": "index.js",
   "typings": "dist/typings.d.ts",
-  "files": [
-    "dist/**",
-    "index.js"
-  ],
   "keywords": [
     "financial-charting-library",
     "charting-library",
@@ -88,7 +84,7 @@
   "scripts": {
     "postinstall": "npm run install-hooks",
     "install-hooks": "node scripts/githooks/install.js",
-    "clean": "rimraf lib/ dist/",
+    "clean": "rimraf lib/",
     "bundle-dts": "tsc --noEmit --allowJs dts-config.js && dts-bundle-generator --config dts-config.js",
     "tsc": "ttsc -p tsconfig.prod.json",
     "tsc-watch": "npm run tsc -- --watch --preserveWatchOutput",
